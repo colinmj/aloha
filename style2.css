@@ -1,0 +1,165 @@
+@font-face {
+  font-family: 'Raleway Lite';
+  src: url("fonts/Raleway-Light.eot");
+  src: url("fonts/Raleway-Light.eot?#iefix") format("embedded-opentype"),
+  url("fonts/Raleway-Light.woff") format("woff"),
+  url("fonts/Raleway-Light.ttf") format("truetype"),
+  url("fonts/Raleway-Light.svg#ralewaylight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Playfair Display';
+  src: url("fonts/PlayfairDisplay-Regular.eot");
+  src: url("fonts/PlayfairDisplay-Regular.eot?#iefix") format("embedded-opentype"),
+  url("fonts/PlayfairDisplay-Regular.woff") format("woff"),
+  url("fonts/PlayfairDisplay-Regular.ttf") format("truetype"),
+  url("fonts/PlayfairDisplay-Regular.svg#ralewaylight") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+
+.menu {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: space-between;
+
+}
+.hero {
+  /* border: 1px solid black; */
+  margin-right: 10px;
+  width: 100%;
+  height: 400px;
+  margin-top: 10px;
+  display: flex;
+  background: 
+  url("images/banner-girl.png") 50% 55px/160px no-repeat,
+  url("images/flower-bkgd.jpg") 100% 70%/ cover no-repeat;
+  
+}
+.hand {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 250px;
+  display: flex;
+}
+.gallery {
+  /* height: 800px;
+  width: 100%; */
+  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  
+}
+.mens {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 200px;
+  margin-bottom: 0px;
+  background:
+  url("images/mens-category.jpg") 100% 100%/cover no-repeat;
+
+}
+.t-g {
+  /* border: 1px solid black; */
+  width: 100%;
+  height: 200px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  background:
+  url("images/trends-category.jpg") 0 95%/ 235px no-repeat,
+  url("images/glasses-category.jpg") 100% 100%/235px no-repeat;
+  }
+  
+.s-b {
+  width: 100%;
+  height: 200px;
+  background:
+  url("images/sale-category.jpg") 0 95%/ 234px no-repeat,
+  url("images/bags-category.jpg") 100% 100%/234px no-repeat;
+  margin-bottom: 8px;
+  
+  
+
+}
+
+.womens {
+  border: 1px solid black;
+  width: 100%;
+  height: 200px;
+  background:
+  url("images/mens-category.jpg") 100% 100%/cover no-repeat;
+
+}
+  
+
+
+.images {
+  width: 100%;
+  height: 55%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 15px;
+  border: 1px solid black;
+  min-width: 480px;
+  
+}
+
+.word {
+  width: 50%;
+  height: 75%;
+  align-self: flex-start;
+  padding-left: 0px;
+  border: 1px solid black;
+  flex-shrink: 3;
+  
+}
+.logo {
+  width: 50%;
+  height: 75%;
+  align-self: flex-start;
+  padding: 1px;
+  flex-shrink: 3;
+  border: 1px solid black;
+}
+
+.list{
+  width: 100%;
+  display: flex;
+  border: 1px solid black;
+  justify-content: space-between;
+  
+  /* padding-right: 10px; */
+  /* padding-bottom: 5px; */
+  
+}
+.list li {
+  width: 100%;
+  list-style: none;
+  /* padding: 10px 30px; */
+  border: 1px solid black;
+ /* padding-right: 5px;
+ padding-bottom: 5px; */
+ flex-shrink: 2;
+ }
+
+ .hand {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+ .first {
+   text-align: center;
+ }
+ .second{
+   text-align: center;
+ }
+
+
+
