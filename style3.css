@@ -19,70 +19,176 @@
   font-weight: normal;
   font-style: normal;
 }
+
+body {
+  font-family: 'Raleway Lite', sans-serif;
+}
+
 /* Mobile Style! */
+
+/* Nav bar */
 .head {
   width: 100%;
   display: flex;
   height: 180px;
-  border: 1px solid black;
-  background-color: red;
+  /* border: 1px solid black; */
   flex-wrap: wrap-reverse;
   align-content: stretch;
+  justify-content: space-between;
   
 }
-.logo{
+.logo {
   width: 100%;
-  flex-basis: 50%;
+  flex-basis: 30%;
   order: 1;
   background-color: pink;
   height: 100px;
-  box-sizing: border-box;
+  background:
+  url("images/aloha-logo.svg") 50% 50%/ 8em 8em no-repeat;
+  /* box-sizing: border-box; */
+  padding-left: 14px;
+  /* border: 1px solid black; */
 }
 .cart {
   width: 100%;
-  flex-basis: 50%;
+  flex-basis: 30%;
   order: 2;
   background-color: brown;
   height: 100px;
   padding:0;
   box-sizing: border-box;
-  
+  background:
+  url("images/cart-icon.svg") 50% 50%/ 5em 5em no-repeat;
 }
 
 .nav {
   width: 100%;
   display: flex;
   height: 70px;
-  background-color: green;
+  justify-content: center;
+}
+.nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-left: 1em;
+  border-top: 1px solid lightgray;
+
+ }
+
+ .nav ul li {
+   align-self: center;
+   margin: 0 1em;
+   list-style: none;
+   margin-left: 0;
+   color: #E47488;
+  
 }
 
+/* Hero picture */
 .hero {
 
   width: 100%;
   display: flex;
   height: 400px;
-  background-color: blue;
+  background: 
+  url("images/banner-girl.png") 50% 55px/160px no-repeat,
+  url("images/flower-bkgd.jpg") 100% 70%/ cover no-repeat;
 }
 
+/* Hand craft banner */
 .hand {
   width: 100%;
   display: flex;
-  height: 250px;
-  background-color: green;
+  height: 300px;
+  justify-content: center;
+  flex-direction: column;
+  margin-bottom: 1px;
+  align-content: center;
+  
+  
+}
+.first {
+  font-size: 2em;
+  align-self: center;
+  font-family: 'Playfair Display', serif;
+}
+.second {
+  text-align: center;
+  line-height: 40px;
+  align-self: center;
+  position: relative;
+  bottom: 25px;
+  
+  
+}
+
+/* Gallery */
+.galwrap{
+  width: 100%;
+  position: relative;
 }
 .gallery {
   width: 100%;
-  display: flex;
-  height: 600px;
-  background-color: orange;
+  display: grid;
+  height: 800px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
+  
 }
+.mens {
+  height: 200px;
+  grid-column: 1/6;
+  background:
+  url("images/mens-category.jpg") 100% 100%/cover no-repeat;
+  text-align: center;
+  
+}
+.trends {
+  background:
+  url("images/trends-category.jpg") 50% 50%/ cover no-repeat;
+  height: 200px;
+  grid-column: 1/3;
+}
+
+.glasses {
+  background:
+  url("images/glasses-category.jpg") 50% 50%/ cover no-repeat;
+  height: 200px;
+  grid-column: 3/6;
+}
+.sales {
+  background:
+  url("images/sale-category.jpg") 20% 25%/ cover no-repeat;
+  height: 200px;
+  grid-column: 1/3;
+}
+.bags {
+  background:
+  url("images/bags-category.jpg") 50% 50%/ cover no-repeat;
+  height: 200px;
+  grid-column: 3/6;
+}
+.womens {
+  background:
+  url("images/womens-category.jpg") 100% 20%/ cover no-repeat;
+  height: 200px;
+  grid-column: 1/6;
+}
+
+/* Products */
 .products {
 
   width: 100%;
   display: flex;
-  height: 400px;
+  height: 600px;
   background-color: yellow;
+  flex-direction: column;
+  justify-content: center; 
+  align-content: center;
+  align-items: center;
 }
+
 
 .sign-up {
   width: 100%;
@@ -101,6 +207,7 @@
 
 /* Tablet Size */
 
+/* Nav bar */
 @media all and (min-width: 600px) {
   .head {
     width: 100%;
@@ -117,6 +224,7 @@
    flex-basis: 25%;
    order: 1;
    background-color: pink;
+   padding: 0;
 }
 
   .cart {
@@ -134,6 +242,33 @@
   order: 2;
   flex-basis: 50%;
   align-self: center;
+}
+
+/* Gallery */
+
+.gallery {
+  height: 400px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+}
+
+.mens {
+  height: 200px;
+  grid-column: 1/5;
+}
+.trends {
+  grid-column: 5/7;
+}
+.glasses {
+  grid-column: 7/9;
+}
+.sales {
+  grid-column: 1/3
+}
+.bags {
+  grid-column: 3/5;
+}
+.womens {
+  grid-column: 5/9;
 }
 
 }
