@@ -34,6 +34,7 @@ body {
 
 .hero {
   background: 
+  linear-gradient(rgba(0,0,0, 0.3), rgba(0, 0, 0, 0.3)),
   url("images/banner-girl.png") 50% 77px/200px no-repeat,
   url("images/flower-bkgd.jpg") 100% 100%/ cover no-repeat;
   border: 3px double #E47488;
@@ -46,7 +47,7 @@ body {
   height: 500px;
   margin-top: 0;
   position:relative;
-  background-color: rgba(0, 0, 0, 0.3);
+  /* background-color: rgba(0, 0, 0, 0.3); */
     
   }
 
@@ -241,7 +242,7 @@ button {
   .names {
     width: 25%;
     padding-right: 30px;
-    /* border: 1px solid white; */
+    border: 1px solid white;
     text-align: right;
     order: 3;
   }
@@ -250,6 +251,7 @@ button {
     list-style: none;
     padding: 5px;
     margin-left: 5px;
+    border: 1px solid white;
   }
 
   i {
