@@ -23,8 +23,9 @@
 body {
   font-family: 'Raleway Lite', sans-serif;
   font-size: 14px;
-  border-left: 30px solid #d7d7d7;
-  border-right: 30px solid #d7d7d7;
+  color: #2d2d2d;
+  /* border-left: 30px solid #d7d7d7;
+  border-right: 30px solid #d7d7d7; */
 }
 
 /* Mobile Style! */
@@ -79,7 +80,16 @@ body {
    margin: 0 1em 0 0;
    list-style: none;
    color: #E47488;
-  
+}
+
+.nav a {
+  text-decoration: none;
+  color: #E47488;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #b64036;
 }
 
 /* Hero picture */
@@ -127,6 +137,7 @@ body {
 .labels h1 {
   font-size: 40px;
   margin: 2px 0;
+  font-weight: normal;
 
 }
 
@@ -143,9 +154,15 @@ body {
   
 }
 .first {
-  font-size: 2em;
+  font-size: 2.5em;
   align-self: center;
   font-family: 'Playfair Display', serif;
+  /* text-shadow: 1px 1px 1px grey; */
+  font-weight: 100;
+}
+
+.first strong {
+  font-weight: 900;
 }
 .second {
   text-align: center;
@@ -153,7 +170,8 @@ body {
   align-self: center;
   position: relative;
   bottom: 25px;
-  width: 75%;
+  width: 85%;
+  font-size: 16px;
 }
 
 /* Gallery */
@@ -242,6 +260,15 @@ body {
   justify-content: center;
 }
 
+.gallery a {
+  text-decoration: none;
+  color: #fff;
+  font-size: 30px;
+}
+.gallery a:hover {
+  color: beige;
+}
+
 /* Products */
 
 .products {
@@ -310,6 +337,7 @@ body {
   font-family: 'Playfair Display', serif;
   color: #fff;
   
+  
 
 }
 
@@ -319,6 +347,7 @@ body {
   color: #fff;
   font-size: 16px;
   flex-basis: 60%;
+  width: 97%;
   
 }
 
@@ -369,11 +398,12 @@ button {
   height: 225px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
   padding: 4em 0;
   color: #fff;
   background: #242424;
   font-family: 'Playfair Display', serif;
+  margin-top: 1em;
 }
 
 
@@ -383,13 +413,18 @@ button {
   justify-content: center;
   align-items: center;
   text-align: center;
+  /* margin: 0; */
+  /* position: absolute; */
+  
+ 
 }
 
 .contact {
   display: flex;
   align-items: center;
   justify-content: center;
-  margin-top: 0px;
+  
+  /* position: absolute; */
 }
 .contact a {
   color: #fff;
@@ -402,6 +437,8 @@ button {
   text-align: center;
   color: #ddd;
   color: grey;
+  /* margin-top: 1px; */
+  /* position: absolute; */
 }
 .icons {
   display: flex;
@@ -556,6 +593,10 @@ button {
   url("images/wave-bkgd.jpg") 50% 93% no-repeat;
 }
 
+.sign-up p {
+  width: 75%;
+}
+
 /* Footer */
 
 .icons ul li p {
@@ -568,13 +609,17 @@ button {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  height: 150px;
+  height: 120px;
   align-content: center;
   align-items: center;
+  padding: 5em 0;
 }
 .left-side {
-  /* border: 1px solid white; */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   height: 200px;
+  margin: 1px, 0;
 }
 
  .left-side .aloha, .contact, .address {
@@ -643,13 +688,17 @@ i {
     order: 1;
     padding: 0 0 2em 0;
     background-position: 15% -60%;
+    /* background-size: 5em 5em; */
+    background:
+    url("images/aloha-logo.svg") 10% 105%/ 12em 12em no-repeat;
+    
   }
   .cart {
     width: 100%;
     flex-basis: 35%;
     order: 3;
     background:
-    url("images/cart-icon.svg") 90% 38%/ 4em 4em no-repeat;
+    url("images/cart-icon.svg") 90% 30%/ 4.5em 4.5em no-repeat;
   
     
   }
@@ -669,6 +718,7 @@ i {
       border: none;
       align-self: center;
       font-size: 16px;
+      font-weight: 900;
     }
 
     /* Hero Pic */
@@ -691,17 +741,21 @@ i {
     }
       
       .labels h1 {
-      font-size: 50px;
+      font-size: 60px;
       margin: 4px 0;
+      font-weight: normal;
       
       }
 
 
 
       /* Hand craft */
-
+      .first{
+        font-size: 45px;
+      }
       .second {
-        width: 45%;
+        width: 50%;
+        font-size: 18px;
       }
 
       /* Gallery */
@@ -735,6 +789,15 @@ i {
 .womens {
   grid-column: 5/9;
   height: 250px;
+}
+
+/* Products */
+
+
+/* Sign-up */
+
+.sign-up p {
+  width: 50%;
 }
 
 

@@ -16,10 +16,10 @@
         <div class="cart"></div>
         <div class="nav">
           <ul>
-            <li>About</li>
-            <li>Shop</li>
-            <li>Featured</li>
-            <li>Updates</li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#shop">Shop</a></li>
+            <li><a href="#featured">Featured</a></li>
+            <li><a href="#updates">Updates</a></li>
           </ul>
         </div>
       </div>
@@ -35,23 +35,23 @@
       </div>
     </div>
 
-    <div class="hand">
+    <div class="hand" id="about">
       <p class="first"><em>Hand-Crafted</em> <strong>Styles</strong></p>
       <p class="second">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our  current selection of products or sign-up for updates below. </p>
     </div>
 
     <div class="galwrap">
-      <div class="gallery">
-        <div class="mens">Men's</div>
-        <div class="trends">Trends</div>
-        <div class="glasses">Glasses</div>
-        <div class="sales">Sales</div>
-        <div class="bags">Bags</div>
-        <div class="womens">Women's</div>
+      <div class="gallery" id="shop">
+        <div class="mens"><a href="#">Men's</a></div>
+        <div class="trends"><a href="#">Trends</a></div>
+        <div class="glasses"><a href="#">Glasses</a></div>
+        <div class="sales"><a href="#">Sale</a></div>
+        <div class="bags"><a href="#">Bags</a></div>
+        <div class="womens"><a href="#">Women's</a></div>
       </div>
     </div>
 
-    <div class="products">
+    <div class="products" id="featured">
       <h2><em>Most Loved</em><strong> Products</strong></h2>
        <ul>
          <li><img src="images/stretch-knit-dress.jpg" alt="A stretch knit dress"/>
@@ -68,9 +68,9 @@
       </ul>
     </div>
 
-    <div class="sign-up">
+    <div class="sign-up" id="updates">
       <h1><em>Sign-up for</em> <strong>Updates</strong></h1>
-      <p>Stay updated on our latest product releases, be first<br> to find out about upcoming sales, and get free style <br>tips from our blog. Unsubscribe at any time.</p>
+      <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from our blog. Unsubscribe at any time.</p>
 
       <form class="form">
         <input type="text" placeholder="Your Email">
@@ -104,6 +104,8 @@
         </div>
       <!-- </div> -->
     </div>
+
+    <script src="script.js"></script>
 
   </body>
 </html>
