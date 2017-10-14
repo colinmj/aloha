@@ -72,16 +72,86 @@ body {
   font-family: 'Raleway Lite', sans-serif;
   font-size: 14px;
   color: #2d2d2d;
- 
-}
+ }
 
 /* Mobile Style! */
 
 /* Nav bar */
-.menu {
-  display: flex;
-  height: 100px;
+
+
+.head {
   width: 100%;
+  display: flex;
+  height: 90px;
+  flex-wrap: wrap-reverse;
+  justify-content: space-between;
+  /* position: relative; */
+  
+}
+.logo {
+  width: 100%;
+  flex-basis: 30%;
+  order: 1;
+  background-color: pink;
+  height: 100px;
+  background:
+  /* url("images/aloha-logo.svg") 25% -60%/ 8em 8em no-repeat;
+  padding-left: 14px; */
+  /* margin-bottom: -px; */
+}
+.cart {
+  width: 100%;
+  flex-basis: 30%;
+  position: relative;
+  background-color: pink;
+  order: 2;
+  height: 100px;
+  padding:0;
+  box-sizing: border-box;
+  /* background:
+  url("images/cart-icon.svg") 60% 80%/ 4em 4em no-repeat; */
+}
+ /* .int {
+  position: absolute;
+   right: -85px; 
+  top: 2.5em;
+  border-radius: 50px;
+  background-color: red;
+  color: #fff;
+  border: none;
+}  */
+
+.nav {
+  width: 100%;
+  display: flex;
+  height: 70px;
+  justify-content: center;
+  flex-basis: 60%;
+  background-color: green;
+}
+.nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  padding-left: 1em;
+  border-top: 1px solid lightgray;
+  }
+
+ .nav ul li {
+   align-self: center;
+   margin: 0 1em 0 0;
+   list-style: none;
+   color: #E47488;
+}
+
+.nav a {
+  text-decoration: none;
+  color: #E47488;
+  text-transform: uppercase;
+}
+
+.nav a:hover {
+  color: #b64036;
 }
 
 /* Hero picture */
@@ -474,8 +544,8 @@ input {
     /* border: 1px solid black; */
     /* background-color: red; */
     flex-wrap: wrap;
-    justify-content: center;
-    align-content: center;
+    /* justify-content: center;
+    align-content: center; */
 
 }
   .logo{
@@ -488,19 +558,21 @@ input {
 
   .cart {
   width: 100%;
-  flex-basis: 17%;
+  flex-basis: 25%;
   order: 3;
-  /* background: url("images/cart-icon.svg") 70% 38%/ 4em 4em no-repeat; */
+  /* background: */
+  /* url("images/cart-icon.svg") 70% 38%/ 4em 4em no-repeat; */
+  background-color: red;
 
   
 }
 
   .nav {
-  width: 100%;
+  /* width: 100%; */
   display: flex;
-  height: 70px;
+  /* height: 90px; */
   order: 2;
-  flex-basis: 58%;
+  flex-basis: 50%;
   align-self: center;
  
   
@@ -676,14 +748,16 @@ i {
     padding: 0 0 2em 0;
     background-position: 15% -60%;
     /* background-size: 5em 5em; */
-    /* background: url("images/aloha-logo.svg") 10% 105%/ 12em 12em no-repeat; */
+    background:
+    url("images/aloha-logo.svg") 10% 105%/ 12em 12em no-repeat;
     
   }
   .cart {
     width: 100%;
     flex-basis: 35%;
     order: 3;
-    /* background: url("images/cart-icon.svg") 90% 30%/ 4.5em 4.5em no-repeat; */
+    background:
+    url("images/cart-icon.svg") 90% 30%/ 4.5em 4.5em no-repeat;
   
     
   }
