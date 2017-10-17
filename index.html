@@ -2,6 +2,8 @@
 <html>
 
 <head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Aloha Apparel Co.</title>
 
   <link href="style3.css" type="text/css" rel="stylesheet" />
@@ -25,6 +27,7 @@
 
     <div class="cart">
       <img src="images/cart-icon.svg" />
+        <button class="int">0</button>
     </div>
 
     <ul class="menu-links">
@@ -37,20 +40,21 @@
   </nav>
 
 
-  <div class="hero">
+  <header class="hero">
     <div class="labels">
       <p>New Collection</p>
       <h1>Spring/Summer 2017</h1>
     </div>
-  </div>
+  </header>
 
-  <div class="hand" id="about">
-    <p class="first"><em>Hand-Crafted</em> <strong>Styles</strong></p>
+  <section class="hand" id="about">
+    <h2 class="first"><span class="italic">Hand-Crafted</span> 
+      <span class="bold">Styles</span></h2>
     <p class="second">Aloha Apparel Co. sells only the finest ready-to-travel clothing. Browse our current selection of products or sign-up
       for updates below. </p>
-  </div>
+    </section>
 
-  <div class="galwrap">
+ 
     <div class="gallery" id="shop">
       <div class="mens"><a href="#">Men's</a></div>
       <div class="trends"><a href="#">Trends</a></div>
@@ -59,11 +63,11 @@
       <div class="bags"><a href="#">Bags</a></div>
       <div class="womens"><a href="#">Women's</a></div>
     </div>
-  </div>
+  
 
-  <div class="products" id="featured">
+  <section class="products" id="featured">
 
-    <h2 class="love"><em>Most Loved </em><strong> Products</strong></h2>
+    <h2 class="love"><span class="italic">Most Loved </span><span class="bold">Products</span></h2>
 
 
     <ul class="main-carousel">
@@ -71,43 +75,62 @@
         <p>Dresses</p>
         <h3>Stretch Knit Dress</h3>
         <p>$169.00</p>
+        <button class="add">Add To Cart</button>
       </li>
 
       <li class="carousel-cell"><img src="images/cotton-blue-shirt.jpg" alt="A nice blue cotton shirt" />
         <p>Shirts</p>
         <h3>Cotton Blue Shirt</h3>
         <p> $89.00</p>
-        <button class="add"></button>
+        <button class="add">Add To Cart</button>
       </li>
 
       <li class="carousel-cell"><img src="images/checked-stretch-dress.jpg" alt="A red dress" />
         <p>Dresses</p>
         <h3>Checked Stretch Dress</h3>
         <p> $129.00</p>
+        <button class="add">Add To Cart</button>
       </li>
 
       <li class="carousel-cell"><img src="images/blue-hipster-backpack.jpg" alt="A blue backpack that a hipster would wear" />
         <p>Bags</p>
         <h3>Blue Hipster Backpack</h3>
         <p> $69.00</p>
+        <button class="add">Add To Cart</button>
       </li>
 
       <li class="carousel-cell"><img src="images/cotton-yellow-tshirt.jpg" alt="A cool yellow shirt" />
         <p>Bags</p>
         <h3>Cotton Yellow Tshirt</h3>
         <p> $69.00</p>
+        <button class="add">Add To Cart</button>
       </li>
 
       <li class="carousel-cell"><img src="images/demin-overall-shorts.jpg" alt="Denim overall shorts" />
         <p>Bags</p>
         <h3>Denim Overall Shorts</h3>
         <p> $69.00</p>
+        <button class="add">Add To Cart</button>
+      </li>
+
+      <li class="carousel-cell"><img src="images/pink-dotted-dress.jpg" alt="Pink dotted dress" />
+        <p>Bags</p>
+        <h3>Pink Dotted Dress</h3>
+        <p> $69.00</p>
+        <button class="add">Add To Cart</button>
+      </li>
+
+      <li class="carousel-cell"><img src="images/blue-silk-dress.jpg" alt="Blue silk dress" />
+        <p>Bags</p>
+        <h3>Blue Silk Dress</h3>
+        <p> $69.00</p>
+        <button class="add">Add To Cart</button>
       </li>
     </ul>
-  </div>
+  </section>
 
-  <div class="sign-up" id="updates">
-    <h1><em>Sign-up for</em> <strong>Updates</strong></h1>
+  <article class="sign-up" id="updates">
+    <h1><span class="italic">Sign-up for</span> <span class="bold">Updates</span></h1>
     <p>Stay updated on our latest product releases, be first to find out about upcoming sales, and get free style tips from
       our blog. Unsubscribe at any time.</p>
 
@@ -115,19 +138,21 @@
       <input type="text" placeholder="Your Email">
       <button class="push">Subscribe</button>
     </form>
-  </div>
+  </article>
 
 
-  <div class="footer">
+  <footer class="footer">
     <div class="left-side">
       <div class="aloha">
-        <p>© 2017 Aloha Apparel Co.</br>Powered by HTML and CSS</p>
+        <p>© 2017 Aloha Apparel Co.</p>
+        <p>Powered by HTML and CSS</p>
       </div>
       <div class="contact">
         <p>604-604-6040. <a href="mailto:info@alohaapparel.com">info@alohaapparel.com</a></p>
       </div>
       <div class="address">
-        <p>1490 W Broadway </br> Vancouver, BC, Canada</p>
+        <p>1490 W Broadway</p> 
+        <p>Vancouver, BC, Canada</p>
       </div>
     </div>
 
@@ -152,17 +177,9 @@
       </ul>
     </div>
   </div>
-  </div>
+  
 
-  <!-- <script
-    src="https://code.jquery.com/jquery-3.2.1.min.js"
-    integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-    crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script> -->
-  <script src="script.js"></script>
-
-
-
+<script src="script.js"></script>
 
 </body>
 

@@ -1,5 +1,5 @@
 
-// Scroll Function
+// Flickity
 
 $(function(){
 
@@ -16,7 +16,7 @@ $(function(){
 
     $('html, body').animate({
         scrollTop: $($.attr(this, 'href')).offset().top
-    }, 1000);
+    }, 1500);
   });
 
 
@@ -28,7 +28,7 @@ $(function(){
     var filter = /^([\w-\.]+)@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.)|(([\w-]+\.)+))([a-zA-Z]{2,4}|[0-9]{1,3})(\]?)$/;
 
     if (filter.test(email)) {
-      alert('Thanks for subscribing! ALOHAAAAA');
+      alert('Thanks for subscribing!');
     } else {
       alert('Invalid Email');
     }
@@ -42,16 +42,6 @@ $(function(){
     x++;
     $('.int').html(x);
   })
-
-
-
-
-
-
-
-
-
-
 });
 
 
