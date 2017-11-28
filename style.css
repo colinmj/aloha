@@ -1,4 +1,5 @@
 
+
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -149,10 +150,24 @@ table {
   font-style: italic;
 }
 
+/*Accessibility*/
+.screen-reader-text {
+  clip: rect(1px, 1px, 1px, 1px);
+  position: absolute !important;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
 
-
-
-
+.screen-reader-text:focus {
+  clip: auto !important;
+  display: block;
+  height: auto;
+  left: 5px;
+  top: 5px;
+  width: auto;
+  z-index: 100000; /* above all content */
+}
 body {
   font-family: 'Raleway Lite', sans-serif;
   font-size: 14px;
@@ -170,6 +185,14 @@ a:hover,
 a:focus {
   color: #D82E22;
 }
+
+button:hover {
+  cursor: pointer;
+}
+
+
+
+
 
 
 /* Mobile Style! */
@@ -392,11 +415,13 @@ a:focus {
   font-size: 16px;
 }
 
-/* Gallery */
-/* .galwrap{
-  width: 100%;
-  position: relative;
-} */
+@media all and (max-width: 380px){
+  .second {
+    font-size: 14px;
+  
+  }
+}
+
 
 .gallery {
   display: -webkit-box;
@@ -782,6 +807,12 @@ a:focus {
   max-width: 95%;
 }
 
+@media all and (max-width: 380px){
+  .sign-up p {
+    font-size: 14px;
+  }
+}
+
 .form {
  display: -webkit-box;
  display: -ms-flexbox;
@@ -883,6 +914,9 @@ input {
   color: #fff;
   text-decoration: underline;
 }
+.contact a:hover {
+  color: #D82E22;
+}
 
 .address {
   display: -webkit-box;
@@ -936,6 +970,12 @@ input {
 
 .icons ul li p {
   display: none;
+}
+.icons a {
+  color: #fff;
+}
+.icons a:hover {
+  color: #D82E22;
 }
 
 /* Tablet Size */
@@ -996,19 +1036,12 @@ input {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-        justify-content: space-around;
-    padding-left: 20px;
+    justify-content: center;
+    /* padding-left: 20px; */
     font-size: 14px;
     
   }
   .int {
-    background-color: red;
-    color: white;
-    width: 22px;
-    height: 22px;
-    border-radius: 50px;
-    text-align: center;
-    position: absolute;
     right: 20px;
     bottom: 40px;
     border: none;
@@ -1032,15 +1065,12 @@ input {
 }
   .second {
     line-height: 30px;
-    width: 90%;
+    max-width: 70%;
     font-size: 18px;
 }
 
 /* Gallery */
 .gallery {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   height: 50vw;
   width: 100%;
   -webkit-box-orient: horizontal;
@@ -1148,7 +1178,7 @@ input {
 }
 
 .sign-up p {
-  max-width: 90%;
+  max-width: 70%;
   padding-bottom: 0px;
   font-size: 18px;
  }
@@ -1301,9 +1331,9 @@ i {
 @media all and (min-width: 1240px) {
 
   .menu {
-    display: -webkit-box;
+    /* display: -webkit-box;
     display: -ms-flexbox;
-    display: flex;
+    display: flex; */
     -ms-flex-pack: distribute;
         justify-content: space-around;
     -webkit-box-align: center;
@@ -1325,8 +1355,9 @@ i {
   }
 
   .logo img {
-    width: 150px;
-    height: 90px;
+    width: 180px;
+    height: 110px;
+    padding: 0 0 0 20px;
   }
   
   .cart {
@@ -1338,8 +1369,9 @@ i {
   }
 
   .cart img {
-    width: 130px;
-    height: 80px;
+    width: 90px;
+    height: 90px;
+    padding: 0 30px 10px 0;
   }
   
   .menu-links {
@@ -1359,19 +1391,14 @@ i {
   }
 
   .int {
-    bottom: 60px;
+    bottom: 63px;
     right: 30px;
   }
 
   /* Hero Pic */
 
     .hero {
-      
-        width: 100%;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        height: 520px;
+      height: 520px;
         background: 
         -webkit-gradient(linear, left top, left bottom, from(rgba(0,0,0, 0.3)), to(rgba(0, 0, 0, 0.3))),
         url("images/banner-girl.png") 50% 45px/250px no-repeat,
@@ -1389,9 +1416,7 @@ i {
         url("images/banner-girl.png") 50% 45px/250px no-repeat,
         url("images/flower-bkgd.jpg") 0% 0%/ cover no-repeat;
       }
-
-
-      
+    
       .labels p {
       margin: 7px 0;
     }
@@ -1443,11 +1468,9 @@ i {
   font-size: 16px;
 }
 
-}
+
 
 
 
 
   
-
-
