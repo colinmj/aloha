@@ -27,4 +27,4 @@ Colin Matson-Jones
 
 I went to stack overflow for the smooth scrolling feature as well as the email verification Regular Expression.
 
-![Alt Aloha Homepage] (/images/Aloha-Screenshot.png "Aloha Homepage")
+![Screen Shot](images/Aloha-Screenshot.png?raw=true "Aloha")
