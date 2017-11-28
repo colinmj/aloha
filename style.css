@@ -1036,7 +1036,8 @@ input {
     display: -ms-flexbox;
     display: flex;
     -ms-flex-pack: distribute;
-    justify-content: center;
+    -webkit-box-pack: center;
+            justify-content: center;
     /* padding-left: 20px; */
     font-size: 14px;
     
@@ -1469,7 +1470,7 @@ i {
 }
 
 
-
+}
 
 
 
